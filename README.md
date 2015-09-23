@@ -1,5 +1,9 @@
-### Purpose
-The Sinatra Skeleton:
+### Digital Techology - Ruby
+Attempt at creating a 11DT assessment example using Ruby and Sinatra.
+
+
+
+### From EDA - The Sinatra Skeleton:
 
 1. Provides a foundation for building challenges or creating a new Sinatra application.
 2. Demonstrates a reasonable set of practices around building Sinatra applications.
