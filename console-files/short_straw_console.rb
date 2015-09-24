@@ -5,28 +5,53 @@
 
 puts "==== Welcome to Short Straw ===="
 puts ""
-puts "- Teacher Instructions -"
-puts "Enter the name of the task: "
-task = gets.chomp
-
-puts task
-
-
-# instructions for teachers
 
 # loop as could be more than one task
 # have exit / cancel option for teacher at this point
 
-#   ask teacher for name of task
-#   store name of task
+puts "- Teacher Instructions -"
+puts "Enter the name of the task: "
+task = gets.chomp
 
-#   ask teacher for number of students
-#   store number of students
+puts "Enter the number of students: "
+num_of_students = gets.chomp.to_i
 
 #   (teacher has to assign a number to each student)
 
-#   generate random short straw number from range of 1 to number of students
-#   assign to random number
+short_straw_number = rand(1..num_of_students)
+
+# student_number = 0
+
+# until student_number == short_straw_number
+#   puts "== Student Instructions =="
+#   puts "Please enter your name: "
+#   student_name = gets.chomp
+#   puts "Please enter your assigned number: "
+#   student_number = gets.chomp
+# end
+
+student_number = 0
+
+while student_number != short_straw_number
+    if student_number == short_straw_number
+      puts "You have drawn the short straw"
+      break
+    end
+
+    puts "== Student Instructions =="
+
+    puts "Please enter your name: "
+    student_name = gets.chomp
+    puts "Please enter your assigned number: "
+    puts "********* short straw"
+    puts short_straw_number
+    student_number = gets.chomp.to_i
+    puts "*********"
+    # puts student_number
+
+
+end
+
 
 #   loop for students until short staw drawn
 #     instructions for student
